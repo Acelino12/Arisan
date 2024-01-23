@@ -1,0 +1,156 @@
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body .container {
+  width: 40%;
+  padding: 5px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.input_container {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.input_container input {
+  width: 80%;
+  height: 50px;
+  padding: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  font-size: 15px;
+}
+.input_container button {
+  width: 20%;
+  height: 50px;
+  color: azure;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 15px;
+  background-color: #41b6e6;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  margin-bottom: 10px;
+  font-size: larger;
+  background-color: red;
+  text-align: center;
+  color: #f2f2f2;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.the_list {
+  float: left;
+  padding: 10px;
+}
+
+.listname {
+  background-color: aquamarine;
+  float: left;
+  padding: 10px;
+  font-size: medium;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.listname:hover {
+  background-color: rgb(97, 212, 174);
+}
+
+.the_winner {
+  width: 100%;
+  float: left;
+}
+.winner {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(135, 185, 29);
+  padding: 10px;
+  color: #ffffff;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.judul {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.namewinner {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.goBack {
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 3px solid #41b6e6;
+  color: #41b6e6;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.goBack:hover {
+  color: rgb(255, 255, 255);
+  background-color: #12adea;
+}
+
+.changewinner {
+  margin-top: 20px;
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 3px solid #ce210b;
+  color: #ce210b;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.changewinner:hover {
+  color: rgb(255, 255, 255);
+  background-color: #ce210b;
+}

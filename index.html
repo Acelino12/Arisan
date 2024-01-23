@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <!-- animate.style -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Arisan</title>
+</head>
+<body>
+
+    <div id="app">
+        <div id="name" class="container animate__animated animate__fadeIn" v-if="state">
+            <div class="logo">
+                <h1> who can get arisan</h1>
+            </div>
+
+            <!-- input -->
+            <div class="input_container">
+                <input type="text" v-model.trim="inputname"/>
+                <button @click="addnameToList">add</button>
+            </div>
+
+            <!-- error -->
+            <div class="error animate__animated animate__shakeX"
+            v-if="showError">
+            {{ error }}
+            </div>
+
+            <!-- list name -->
+            <div class="the_list">
+                <div class="listname animate__animated animate__fadeIn"
+                v-for="(name, index) in namearray" :key="name" @click="removeName(index)">
+                    {{ name }}
+                </div>
+            </div>
+            
+            <!-- winner ready -->
+            <div class="the_winner animate__animated animate__fadeIn" v-if="isReady">
+                <div class="winner" @click="chackWinner">
+                    chack the winner
+                </div>
+            </div>
+            
+        </div>
+
+
+
+        <!-- chack the winner -->
+        <div id="result" class="container animate__animated animate__fadeIn" v-if="!state">
+            <div class="judul">
+                <h1>The Winner is</h1>
+            </div>
+
+            <!-- name the winner -->
+            <div class="namewinner" >
+                {{ namewinner }}
+            </div>
+
+            <!-- back home -->
+            <div class="back">
+                <div class="goBack" @click="goBack">
+                    back
+                </div>
+            </div>
+
+            <!-- change the winner -->
+            <div>
+                <div class="changewinner" @click="rendemPick">
+                    change the Winner maskdjnwd alsmdmwed
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="script/app.js"></script>
+</html>
